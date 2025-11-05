@@ -8,6 +8,12 @@ const routes: Routes = [
     pathMatch: 'full'
   },
   {
+    path: 'ia-assistente',
+    loadChildren: () => import('./ia-assistente/ia-assistente.module').then(m => m.IaAssistentePageModule)
+  },
+  
+  
+  {
     path: 'cadastro',
     loadComponent: () => import('./cadastro/cadastro.page').then(m => m.CadastroPage)
   },

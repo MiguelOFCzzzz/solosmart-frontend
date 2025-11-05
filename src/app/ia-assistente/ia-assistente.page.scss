@@ -1,0 +1,131 @@
+ion-content {
+    --background: #fff3e0;
+  }
+  
+  ion-header {
+    background: transparent;
+    box-shadow: none;
+    text-align: center;
+  }
+  
+  .logo {
+    width: 200px;
+    height: auto;
+    margin-top: 50px;
+    animation: slideUp 0.5s ease forwards;
+  }
+  
+  @keyframes slideUp {
+    from {
+      transform: translateY(40px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  ion-header p {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #b0b0b0;
+    margin: auto;
+    margin-left: 10px;
+  }
+  
+  .ia-card {
+    background-color: #e3a330;
+    border-radius: 24px;
+    color: #fff3e0;
+  }
+  
+  ion-card-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  ion-card-header ion-icon {
+    color: #fff3e0;
+    width: 30px;
+    height: 30px;
+  }
+  
+  ion-card-title {
+    font-family: Poppins;
+    font-size: 18px;
+    color: #fff3e0;
+  }
+  
+  /* CHAT */
+  .chat-box {
+    background: #fff;
+    border-radius: 18px;
+    padding: 12px;
+    height: 320px;
+    overflow-y: auto;
+  }
+  
+  .chat-box .user,
+  .chat-box .ia {
+    margin: 8px 0;
+  }
+  
+  .chat-box .user {
+    text-align: right;
+  }
+  
+  .chat-box .ia {
+    text-align: left;
+  }
+  
+  .chat-box p {
+    display: inline-block;
+    max-width: 80%;
+    padding: 8px 12px;
+    border-radius: 12px;
+    font-family: Poppins;
+    font-size: 14px;
+  }
+  
+  .chat-box .user p {
+    background-color: #2a3d1d;
+    color: #fff3e0;
+    border-bottom-right-radius: 4px;
+  }
+  
+  .chat-box .ia p {
+    background-color: #c56d47;
+    color: #fff3e0;
+    border-bottom-left-radius: 4px;
+  }
+  
+  /* INPUT FIXO */
+  .chat-input {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #fff;
+    border-top: 2px solid #e3a330;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+  }
+  
+  .input-text {
+    flex: 1;
+    font-family: Poppins;
+    margin-right: 8px;
+  }
+  
+  .user-info {
+    font-family: Poppins;
+    font-size: 14px;
+    color: #b0b0b0;
+    text-align: center;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,36 @@
+<ion-content>
+    <ion-header>
+      <img class="logo" src="../../assets/logo2.png" alt="Logo" />
+      <p>
+        Assistente Inteligente SoloSmart 🌱<br />
+        Tire dúvidas sobre sua plantação
+      </p>
+    </ion-header>
+  
+    <ion-card class="ia-card">
+      <ion-card-header>
+        <ion-card-title><strong>Chat com a IA</strong></ion-card-title>
+        <ion-icon name="chatbubbles-outline"></ion-icon>
+      </ion-card-header>
+  
+      <ion-card-content>
+        <div class="chat-box">
+          <div *ngFor="let msg of messages" [ngClass]="msg.sender">
+            <p>{{ msg.text }}</p>
+          </div>
+        </div>
+      </ion-card-content>
+    </ion-card>
+  
+    <div class="chat-input">
+      <ion-input
+        [(ngModel)]="userMessage"
+        placeholder="Pergunte algo à IA..."
+        class="input-text"
+      ></ion-input>
+      <ion-button (click)="sendMessage()" color="light">Enviar</ion-button>
+    </div>
+  
+    <p class="user-info">{{ userEmail }}</p>
+  </ion-content>
+  
